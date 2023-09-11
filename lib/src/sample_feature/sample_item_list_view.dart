@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../settings/settings_view.dart';
 import 'sample_item.dart';
 import 'sample_item_details_view.dart';
+import 'package:intl/intl.dart';
 
 /// Displays a list of SampleItems.
 class SampleItemListView extends StatelessWidget {
@@ -19,7 +20,13 @@ class SampleItemListView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Sample Items'),
+        backgroundColor: Colors.black,
+        title: Column(
+          children: [
+            const Text("Athletes", style: TextStyle(color: Colors.white),),
+            Text(DateFormat('MMMM d').format(DateTime.now()), style: const TextStyle(color: Colors.white54),),
+          ],
+        ),
         actions: [
           IconButton(
             icon: const Icon(Icons.settings),
