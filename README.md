@@ -2,7 +2,7 @@
 FASE combines the excitement of fantasy sports with the dynamics of stock trading, allowing users to invest in virtual athlete stocks for free.
 
 
-FASE has 3 essential functions:
+FASE has 4 essential functions:
 
 **1. Predicting the career earnings of a player: The estimated career earnings of a player will determine the market cap of an athlete. When a player retires or a season ends without the athlete on a roster the athlete's stock will be distributed to owners based on the investor's stake.**
 
