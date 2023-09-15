@@ -26,6 +26,11 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
+  # fonts:
+  #   - family: Poppins
+  #     fonts:
+  #       - asset: assets/*
+
   # Enable generation of localized Strings from arb files.
   generate: true
 

@@ -9,6 +9,8 @@ void main() async {
   // Flutter Widgets.
   final settingsController = SettingsController(SettingsService());
 
+  // change the default font of the app
+
   // Load the user's preferred theme while the splash screen is displayed.
   // This prevents a sudden theme change when the app is first displayed.
   await settingsController.loadSettings();

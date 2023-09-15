@@ -60,6 +60,7 @@ class MyApp extends StatelessWidget {
             brightness: Brightness.dark, // Use dark mode
             primaryColor: Colors.black, // Set primary color to black
             scaffoldBackgroundColor: Colors.black, // Set scaffold background color to black
+            // fontFamily: "Poppins",
           ),
           themeMode: settingsController.themeMode,
 
@@ -72,11 +73,12 @@ class MyApp extends StatelessWidget {
                 switch (routeSettings.name) {
                   case SettingsView.routeName:
                     return SettingsView(controller: settingsController);
-                  case SampleItemDetailsView.routeName:
-                    return const SampleItemDetailsView();
-                  case SampleItemListView.routeName:
+                  case AthleteCardDetailsView.routeName:
+                    return const AthleteCardDetailsView();
+                  case AthleteCardListView.routeName:
                   default:
-                    return const SampleItemListView();
+                    return
+                        const AthleteCardListView();
                 }
               },
             );

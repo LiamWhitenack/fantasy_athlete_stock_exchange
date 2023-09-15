@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-/// Displays detailed information about a SampleItem.
-class SampleItemDetailsView extends StatelessWidget {
-  const SampleItemDetailsView({super.key});
+/// Displays detailed information about a AthleteCard.
+class AthleteCardDetailsView extends StatelessWidget {
+  const AthleteCardDetailsView({super.key});
 
   static const routeName = '/sample_item';
 
