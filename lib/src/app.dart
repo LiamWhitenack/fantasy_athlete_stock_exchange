@@ -60,7 +60,8 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             brightness: Brightness.dark, // Use dark mode
             primaryColor: Colors.black, // Set primary color to black
-            scaffoldBackgroundColor: Colors.black, // Set scaffold background color to black
+            scaffoldBackgroundColor:
+                Colors.black, // Set scaffold background color to black
             // fontFamily: "Poppins",
           ),
           themeMode: settingsController.themeMode,
@@ -76,7 +77,7 @@ class MyApp extends StatelessWidget {
                     return SettingsView(controller: settingsController);
                   case AthleteCardDetailsView.routeName:
                     return const AthleteCardDetailsView();
-                  case AthleteCardListView.routeName:
+                  case FantasyAthleteStocksListView.routeName:
                   default:
                     return const AppBody();
                 }

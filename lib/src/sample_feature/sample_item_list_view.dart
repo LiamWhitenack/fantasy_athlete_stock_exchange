@@ -4,32 +4,22 @@ import 'sample_item.dart';
 import 'sample_item_details_view.dart';
 
 /// Displays a list of AthleteCards.
-class AthleteCardListView extends StatelessWidget {
-  const AthleteCardListView({
-    super.key,
-    this.items = const [AthleteCard(1), AthleteCard(2), AthleteCard(3)],
-  });
-
-  static const routeName = '/';
-
-  final List<AthleteCard> items;
-
-  @override
-  Widget build(BuildContext context) {
-    return FantasyAthleteStocksListView(items: items);
-  }
-}
 
 class FantasyAthleteStocksListView extends StatelessWidget {
   const FantasyAthleteStocksListView({
     super.key,
-    required this.items,
+    required this.names,
+    // required this.filter,
   });
-
-  final List<AthleteCard> items;
+  final List<String> names;
+  static const routeName = '/';
 
   @override
   Widget build(BuildContext context) {
+    final List<AthleteCard> items = [];
+    for (String name in names) {
+      items.add(AthleteCard(name));
+    }
     return ListView.builder(
       // Providing a restorationId allows the ListView to restore the
       // scroll position when a user leaves and returns to the app after it
@@ -40,18 +30,18 @@ class FantasyAthleteStocksListView extends StatelessWidget {
         final item = items[index];
 
         return ListTile(
-          title: Text('${item.id}'),
-          trailing: const SizedBox(width: 66, height: 20, child: LineChartSample()),
-          onTap: () {
-            // Navigate to the details page. If the user leaves and returns to
-            // the app after it has been killed while running in the
-            // background, the navigation stack is restored.
-            Navigator.restorablePushNamed(
-              context,
-              AthleteCardDetailsView.routeName,
-            );
-          }
-        );
+            title: Text(item.name),
+            trailing:
+                const SizedBox(width: 66, height: 20, child: LineChartSample()),
+            onTap: () {
+              // Navigate to the details page. If the user leaves and returns to
+              // the app after it has been killed while running in the
+              // background, the navigation stack is restored.
+              Navigator.restorablePushNamed(
+                context,
+                AthleteCardDetailsView.routeName,
+              );
+            });
       },
     );
   }

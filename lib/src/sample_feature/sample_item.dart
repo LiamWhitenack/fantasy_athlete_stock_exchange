@@ -1,6 +1,6 @@
 /// A placeholder class that represents an entity or model.
 class AthleteCard {
-  const AthleteCard(this.id);
+  const AthleteCard(this.name);
 
-  final int id;
+  final String name;
 }
