@@ -1,9 +1,8 @@
-import 'package:fantasy_athlete_stock_exchange/athlete.dart';
 import 'package:flutter/material.dart';
 
 /// Displays detailed information about a AthleteCard.
-class AthleteCardDetailsView extends StatelessWidget {
-  const AthleteCardDetailsView({super.key});
+class AthleteDetailsView extends StatelessWidget {
+  const AthleteDetailsView({super.key});
 
   static const routeName = '/sample_item';
 

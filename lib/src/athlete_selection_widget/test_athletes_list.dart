@@ -27,7 +27,6 @@ List<Athlete> popularAthletes = [
   Athlete("Russell Wilson", "NFL"),
   Athlete("Saquon Barkley", "NFL"),
   Athlete("Serena Williams", "WTA"),
-  Athlete("Simone Biles", "USA Gymnastics"),
   Athlete("Tom Brady", "NFL"),
   Athlete("Trevor Lawrence", "NFL"),
   Athlete("Zion Williamson", "NBA"),

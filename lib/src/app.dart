@@ -75,8 +75,8 @@ class MyApp extends StatelessWidget {
                 switch (routeSettings.name) {
                   case SettingsView.routeName:
                     return SettingsView(controller: settingsController);
-                  case AthleteCardDetailsView.routeName:
-                    return const AthleteCardDetailsView();
+                  case AthleteDetailsView.routeName:
+                    return const AthleteDetailsView();
                   case FantasyAthleteStocksListView.routeName:
                   default:
                     return const AppBody();
